@@ -11,29 +11,8 @@ import { NgForm } from '@angular/forms';
 
 export class CidadeComponent implements OnInit {
 
-  cidade : any = {
-    nome_cidade: String,
-    codigo: String,
-    uf: String
-  } //Nome da entidade
+  cidade : any = {} //Nome da entidade
 
-  cidades : Array<any> = [
-    {
-      nome_cidade: "Franca",
-      codigo: "12-SP",
-      uf: "SP"
-    },
-    {
-      nome_cidade: "Ribeirão Preto",
-      codigo: "25-SP",
-      uf: "SP"
-    },
-    {
-      nome_cidade: "Ribeirão Corrente",
-      codigo: "13-SP",
-      uf: "SP"
-    } 
-  ]
 
   displayedColumns : string[] = ['codigo','cidade']
 

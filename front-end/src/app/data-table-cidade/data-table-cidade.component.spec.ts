@@ -4,7 +4,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 
-import { DataTableComponent } from './data-table.component';
+import { DataTableComponent } from './data-table-cidade.component';
 
 describe('DataTableComponent', () => {
   let component: DataTableComponent;
