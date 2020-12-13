@@ -20,7 +20,13 @@ export class ClienteComponent implements OnInit {
   ];
 
   clientes : Cliente[] = [
-    {nome:"Matheus de Oliveira e Souza",codigo:"1",sexo:"Masculino",rg:"99.999.999X",cpf:"999.999.999-99",dt_nascimento:"06/12/2001",salario:"500,00",cidade:this.cidades[0].nome_cidade},
+    {nome:"Matheus de Oliveira e Souza",codigo:"1",sexo:"Masculino",rg:"99.999.999X",cpf:"999.999.999-99",dt_nascimento:"06/12/2001",salario:"500.00",cidade:this.cidades[0].nome_cidade},
+    {nome:"Guilherme Araujo de Oliveira",codigo:"2",sexo:"Masculino",rg:"88.888.888Y",cpf:"888.888.888-88",dt_nascimento:"26/03/2003",salario:"800.00",cidade:this.cidades[1].nome_cidade},
+    {nome:"Fausto Silva",codigo:"3",sexo:"Masculino",rg:"77.777.777Z",cpf:"777.777.777-77",dt_nascimento:"13/11/1968",salario:"1 000.00",cidade:this.cidades[0].nome_cidade},
+    {nome:"Ana Furtado",codigo:"4",sexo:"Feminino",rg:"66.666.666A",cpf:"666.666.666-66",dt_nascimento:"08/06/1974",salario:"1 500.00",cidade:this.cidades[2].nome_cidade},
+    {nome:"Gerônima Lima",codigo:"5",sexo:"Feminino",rg:"55.555.555B",cpf:"555.555.555-55",dt_nascimento:"01/07/1945",salario:"300.00",cidade:this.cidades[0].nome_cidade},
+    {nome:"Tadeu Schmidt",codigo:"6",sexo:"Masculino",rg:"44.444.444C",cpf:"444.444.444-44",dt_nascimento:"19/02/1956",salario:"5 700.00",cidade:this.cidades[1].nome_cidade},
+    {nome:"Daniel Ribeiro Hielgmann",codigo:"7",sexo:"Masculino",rg:"33.333.333D",cpf:"333.333.333-33",dt_nascimento:"14/09/2007",salario:"9 000.00",cidade:this.cidades[1].nome_cidade},
   ];
 
   displayedColumns : string[] = ['nome','codigo','sexo','rg','cpf','dt_nascimento','salario','cidade','editar','excluir']

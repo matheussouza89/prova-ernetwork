@@ -21,6 +21,7 @@ import { DataTableClienteComponent } from './data-table-cliente/data-table-clien
 import { ClienteComponent } from './views/cliente/form-list/cliente.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { HomeComponent } from './views/home/home.component';
 
 const maskConfig: Partial<IConfig> = {
   validation: false,
@@ -35,7 +36,8 @@ const maskConfig: Partial<IConfig> = {
     MainMenuComponent,
     DataTableComponent,
     DataTableClienteComponent,
-    ClienteComponent
+    ClienteComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
