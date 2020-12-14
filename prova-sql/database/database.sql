@@ -34,7 +34,20 @@ VALUES (nome:"Matheus de Oliveira e Souza",codigo:"1",sexo:"M",rg:"99.999.999X",
     (nome:"Ana Furtado",codigo:"4",sexo:"F",rg:"66.666.666A",cpf:"666.666.666-66",dt_nascimento:"08/06/1974",salario:1500.00,cidade:3),
     (nome:"Gerônima Lima",codigo:"5",sexo:"F",rg:"55.555.555B",cpf:"555.555.555-55",dt_nascimento:"01/07/1945",salario:300.00,cidade:1),
     (nome:"Tadeu Schmidt",codigo:"6",sexo:"M",rg:"44.444.444C",cpf:"444.444.444-44",dt_nascimento:"19/02/1956",salario:5700.00,cidade:2),
-    (nome:"Daniel Ribeiro Hielgmann",codigo:"7",sexo:"M",rg:"33.333.333D",cpf:"333.333.333-33",dt_nascimento:"14/09/2007",salario:9000.00,cidade:2);
+    (nome:"Daniel Ribeiro Hielgmann",codigo:"7",sexo:"M",rg:"33.333.333D",cpf:"333.333.333-33",dt_nascimento:"25/12/2005",salario:9000.00,cidade:2),
+    (nome:"Alice",codigo:"8",sexo:"M",rg:"33.333.333D",cpf:"333.333.333-33",dt_nascimento:"01/01/2019",salario:9000.00,cidade:2),
+    (nome:"Sophia",codigo:"9",sexo:"M",rg:"33.333.333D",cpf:"333.333.333-33",dt_nascimento:"14/12/1957",salario:9000.00,cidade:2),
+    (nome:"Gabriel",codigo:"10",sexo:"M",rg:"33.333.333D",cpf:"333.333.333-33",dt_nascimento:"19/11/2016",salario:9000.00,cidade:2),
+    (nome:"João Vitor",codigo:"11",sexo:"M",rg:"33.333.333D",cpf:"333.333.333-33",dt_nascimento:"14/09/2008",salario:9000.00,cidade:2),
+    (nome:"Nicole",codigo:"12",sexo:"M",rg:"33.333.333D",cpf:"333.333.333-33",dt_nascimento:"19/10/1994",salario:9000.00,cidade:2),
+    (nome:"Ana Clara",codigo:"13",sexo:"M",rg:"33.333.333D",cpf:"333.333.333-33",dt_nascimento:"29/04/2002",salario:9000.00,cidade:2),
+    (nome:"Letícia",codigo:"14",sexo:"M",rg:"33.333.333D",cpf:"333.333.333-33",dt_nascimento:"14/09/1976",salario:9000.00,cidade:2),
+    (nome:"Emanuelly",codigo:"15",sexo:"M",rg:"33.333.333D",cpf:"333.333.333-33",dt_nascimento:"31/10/1891",salario:9000.00,cidade:2),
+    (nome:"Davi Lucas",codigo:"16",sexo:"M",rg:"33.333.333D",cpf:"333.333.333-33",dt_nascimento:"01/06/1696",salario:9000.00,cidade:2),
+    (nome:"Davi Luiz",codigo:"17",sexo:"M",rg:"33.333.333D",cpf:"333.333.333-33",dt_nascimento:"03/02/1999",salario:9000.00,cidade:2),
+    (nome:"João Gabriel",codigo:"18",sexo:"M",rg:"33.333.333D",cpf:"333.333.333-33",dt_nascimento:"14/10/2007",salario:9000.00,cidade:2),
+    (nome:"Carolina",codigo:"19",sexo:"M",rg:"33.333.333D",cpf:"333.333.333-33",dt_nascimento:"04/09/2012",salario:9000.00,cidade:2),
+    (nome:"Alícia",codigo:"20",sexo:"M",rg:"33.333.333D",cpf:"333.333.333-33",dt_nascimento:"09/09/2018",salario:9000.00,cidade:2);
 
 --1 Trazer todos os registros de CIDADE e CLIENTE (2 QUERY)--
 SELECT * FROM cidades;
@@ -47,11 +60,11 @@ SELECT * FROM clientes where nome like 'A%';
 --4 Trazer todos os CLIENTES que terminem com SILVA--
 select * from clientes where nome like '%Silva';
 --5 Qual o maior salário do CLIENTE--
-select max(salario) from clientes;
+select nome,max(salario) from clientes;
 --6 A média de salário agrupado por SEXO--
-select avg(salario) from clientes group by sexo;
+select sexo,avg(salario) from clientes group by sexo;
 --7 O maior salário agrupado pela CIDADE--
-select max(salario) from clientes group by cidade;
+select cidades,max(salario) from clientes group by cidade;
 --8 Trazer todos os CLIENTES exibindo seus dados e de sua CIDADE--
 select clientes .*,cidades.nome_cidade from clientes 
 inner join cidades on clientes.cidade = cidades.id;

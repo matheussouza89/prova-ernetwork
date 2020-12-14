@@ -19,10 +19,7 @@ export class CidadeComponent implements OnInit {
   cidades : Cidade[] = [
     {nome_cidade:"Franca",codigo:"12-SP",uf:"SP"},
     {nome_cidade:"Ribeirão Preto",codigo:"35-SP",uf:"SP"},
-    {nome_cidade:"Ribeirão Corrente",codigo:"14-SP",uf:"SP"},
-    {nome_cidade:"Ribeirão Corrente",codigo:"14-SP",uf:"SP"},
-    {nome_cidade:"Ribeirão Corrente",codigo:"14-SP",uf:"SP"},
-    {nome_cidade:"Ribeirão Corrente",codigo:"14-SP",uf:"SP"},
+    {nome_cidade:"Ribeirão Corrente",codigo:"14-SP",uf:"SP"}
   ];
 
 

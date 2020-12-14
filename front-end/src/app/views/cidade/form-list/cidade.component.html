@@ -1,13 +1,6 @@
 <mat-tab-group>
     <mat-tab label="Cadastro de Cidade"><div class="container">
-        <div class="titulo-pesquisa">
         <h1>Cadastro de Cidade</h1>
-        <mat-form-field>
-            <mat-label><mat-icon>search</mat-icon> Pesquisa</mat-label>
-            <input matInput placeholder="Ex. Franca">
-        </mat-form-field>
-        <div class="clear"></div>
-        </div>
         <form class="form-cadastro" #f="ngForm" (ngSubmit)="salvar(f)">
             <mat-form-field class="form-input">
                 <mat-label>Código da Cidade</mat-label>
@@ -28,7 +21,14 @@
     </div></mat-tab>
     <mat-tab label="Listagem">
         <div class="container">
+        <div class="titulo-pesquisa">
         <h1>Listagem de Cidades</h1>
+        <mat-form-field>
+            <mat-label><mat-icon>search</mat-icon> Pesquisa</mat-label>
+            <input matInput placeholder="Ex. Franca">
+        </mat-form-field>
+        </div>
+        <div class="clear"></div>
         <div class="mat-elevation-z8">
             <table mat-table [dataSource]="dataSource">
           

@@ -4,6 +4,18 @@ header.banner{
    height: 30vh;
    min-height: 400px;
    background-size: cover;
+   color: white;
+   div{
+       margin: 10%;
+       float:right;
+    h1{
+        font-weight: 600;
+    }
+    p{
+        width: 400px;
+        text-align: center;
+    }
+   }
 }
 
 .content{
