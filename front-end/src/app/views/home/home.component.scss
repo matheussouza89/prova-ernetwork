@@ -1,0 +1,33 @@
+header.banner{
+    width: 100%;
+   background-image: url('../images/bar-1846137_1920.jpg');
+   height: 30vh;
+   min-height: 400px;
+   background-size: cover;
+}
+
+.content{
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.artigo1{
+    padding: 2%;
+    margin: 2%;
+    width: 40%;
+    float: left;
+    background-color: #ece5db;
+    border-radius: 30px;
+}
+
+.artigo2{
+    padding: 2%;
+    margin: 2% 2% 2% 2%;
+    width: 40%;
+    float: right;
+    background-color: #ece5db;
+    border-radius: 30px;
+}
+.clear{
+    clear: both;
+}

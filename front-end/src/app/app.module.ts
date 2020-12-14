@@ -14,10 +14,8 @@ import { CidadeComponent } from './views/cidade/form-list/cidade.component';
 import { MainMenuComponent } from './ui/main-menu/main-menu.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { DataTableComponent } from './data-table-cidade/data-table-cidade.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import { DataTableClienteComponent } from './data-table-cliente/data-table-cliente.component';
 import { ClienteComponent } from './views/cliente/form-list/cliente.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
@@ -34,8 +32,6 @@ const maskConfig: Partial<IConfig> = {
     MainFooterComponent,
     CidadeComponent,
     MainMenuComponent,
-    DataTableComponent,
-    DataTableClienteComponent,
     ClienteComponent,
     HomeComponent
   ],

@@ -1,14 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #fafafa;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #f9f6f3;}
 
 mat-table{
     width: 100%;
+}
+
+.mat-row .mat-raised-button {
+    visibility: hidden;
+}
+
+.mat-row:hover .mat-raised-button {
+    visibility: visible;
+}
+
+.mat-row:hover {
+    filter: brightness(90%);
+}
+
+.new-item {
+    background-color: transparent;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    justify-content: flex-end;
+
+    a {
+        font-size: 110%;
+    }
 }
 
 .container{
     width: 90%;
     margin: 0px auto;
     padding: 40px;
+}
+
+.titulo-pesquisa{
+    margin-bottom: 90px;
+    h1{
+        float: left;
+    }
+    mat-form-field{
+        float: right;
+        width: 50%;
+    }
 }

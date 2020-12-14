@@ -1,9 +1,11 @@
 import { Cliente } from './../../../../../../back-end/models/Cliente';
 import { Cidade } from './../../../../../../back-end/models/Cidade';
 import { ClienteService } from './../cliente.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import { MatTableDataSource } from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
 
 
 @Component({
@@ -31,12 +33,21 @@ export class ClienteComponent implements OnInit {
 
   displayedColumns : string[] = ['nome','codigo','sexo','rg','cpf','dt_nascimento','salario','cidade','editar','excluir']
 
+  dataSource = new MatTableDataSource<Cliente>(this.clientes);
+
+  @ViewChild(MatPaginator)
+  paginator!: MatPaginator;
+  
   cliente: any = {} //Entidade vazia
 
   constructor(
     private clienteSrv : ClienteService,
     private actRoute : ActivatedRoute
   ) { }
+
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+  }
 
   ngOnInit(){
   }
