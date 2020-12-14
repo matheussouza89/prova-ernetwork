@@ -14,7 +14,7 @@ import { MatPaginator } from '@angular/material/paginator';
 
 export class CidadeComponent implements OnInit {
 
-  cidade : any = {} //Nome da entidade
+  cidade : any = {}
 
   cidades : Cidade[] = [
     {nome_cidade:"Franca",codigo:"12-SP",uf:"SP"},

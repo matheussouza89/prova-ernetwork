@@ -38,7 +38,7 @@ export class ClienteComponent implements OnInit {
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
   
-  cliente: any = {} //Entidade vazia
+  cliente: any = {}
 
   constructor(
     private clienteSrv : ClienteService,
